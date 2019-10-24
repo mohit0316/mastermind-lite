@@ -1,5 +1,5 @@
-# mastermind-lite
-Simple version of mastermind game.
+# Mastermind-Lite
+A simple light-weight version of the famous mastermind game.
 
 ### Description
 
