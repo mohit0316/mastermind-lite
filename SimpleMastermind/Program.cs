@@ -15,8 +15,8 @@ namespace SimpleMastermind
             Console.WriteLine("You will be playing as the CodeBreaker, enter player name:");
             string playerName = Console.ReadLine();
 
-            // digits cannot be 0, 7, 8, 9
-            var masterCode = new int[] { new Random().Next(1, 7), new Random().Next(1, 7), new Random().Next(1, 7), new Random().Next(1, 7) };
+            // each digit is between numbers 1 and 6, meaning each digit can only be 2, 3, 4 or 5.
+            var masterCode = new int[] { new Random().Next(2, 6), new Random().Next(2, 6), new Random().Next(2, 6), new Random().Next(2, 6) };
 
             var hasCodeBreakerWon = false;
             int numAttemptsTakenToWin = 0;
