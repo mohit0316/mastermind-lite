@@ -17,7 +17,6 @@ namespace SimpleMastermind
 
             // digits cannot be 0, 7, 8, 9
             var masterCode = new int[] { new Random().Next(1, 7), new Random().Next(1, 7), new Random().Next(1, 7), new Random().Next(1, 7) };
-            Console.WriteLine("Full code is {0}", string.Join("", masterCode));
 
             var hasCodeBreakerWon = false;
             int numAttemptsTakenToWin = 0;
