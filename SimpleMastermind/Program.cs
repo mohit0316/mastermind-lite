@@ -9,7 +9,8 @@ namespace SimpleMastermind
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Welcome to Mastermind Lite!");
+            Console.WriteLine("Welcome to Mastermind Lite!" + Environment.NewLine);
+            Console.WriteLine("The master code is a 4-digit code with each digit between numbers 1 and 6 (2, 3, 4 or 5)" + Environment.NewLine);
 
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("You will be playing as the CodeBreaker, enter player name:");
