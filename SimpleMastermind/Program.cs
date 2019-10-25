@@ -10,14 +10,13 @@ namespace SimpleMastermind
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Welcome to Mastermind Lite!" + Environment.NewLine);
-            Console.WriteLine("The master code is a 4-digit code with each digit between numbers 1 and 6 (2, 3, 4 or 5)" + Environment.NewLine);
 
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("You will be playing as the CodeBreaker, enter player name:");
             string playerName = Console.ReadLine();
 
-            // each digit is between numbers 1 and 6, meaning each digit can only be 2, 3, 4 or 5.
-            var masterCode = new int[] { new Random().Next(2, 6), new Random().Next(2, 6), new Random().Next(2, 6), new Random().Next(2, 6) };
+            // Assumption: Each digit is between 1 and 6, including 1 and 6 based on my understanding, meaning each digit can only be 1, 2, 3, 4, 5 or 6
+            var masterCode = new int[] { new Random().Next(1, 7), new Random().Next(1, 7), new Random().Next(1, 7), new Random().Next(1, 7) };
 
             var hasCodeBreakerWon = false;
             int numAttemptsTakenToWin = 0;
